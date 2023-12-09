@@ -1,11 +1,17 @@
-function remove() {
-    
-}
-
-
 function addToList() {
     var newDiv = document.createElement('div');
     newDiv.className = 'taskBox';
-    //gets the div box element with id container to append new boxes/divs to
+
+    var removebutton = document.createElement('button');
+    removebutton.textContent = 'Remove';
+    removebutton.className = 'remove-button';
+
+    removebutton.addEventListener('click', function() {
+        newDiv.remove();
+    });
+
+    newDiv.appendChild(removebutton);
+
     document.getElementById('container').appendChild(newDiv);
+
 }
