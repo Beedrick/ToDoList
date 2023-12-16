@@ -1,15 +1,17 @@
 .taskBox {
-    width: 150px;
-    height: 50px;
+    width: 390px;
+    height: 120px;
     background-color: lightblue;
-    margin: 10px;
-    display:inline-block;
+    margin-top: 10px;
+    margin-inline: auto;
 }
 
-.taskBox2 {
-    width: 150px;
-    height: 50px;
-    background-color: lightcoral;
-    margin: 10px;
-    display:inline-block;
+.doneButton {
+    margin-top: 40px;
+    margin-left: 450px;
+}
+
+.cataButton {
+    width: 45px;
+    height: 45px;
 }
