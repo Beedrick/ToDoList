@@ -1,3 +1,5 @@
+var checked = false;
+
 function addToList(catagory) {
     var newDiv = document.createElement('div');
     newDiv.className = 'taskBox';
@@ -37,4 +39,29 @@ function incNumTask() {
 
 function decNumTask() {
     document.getElementById("numOfTask").innerHTML--;
+}
+
+function selectCata(imgSource) {
+var inputDiv = document.getElementById("userInputDiv");
+   if(checked){
+       var divBoxSrc = document.getElementById('taskIcon');
+       var url = new URL(divBoxSrc.src);
+       var imagePath = url.pathname;
+       if(imagePath == imgSource){
+        return;
+       }else{
+        checked = false;
+        inputDiv.removeChild(document.getElementById('taskIcon'));
+       }
+   }
+
+    if(!checked){
+
+        var cataImage = document.createElement('img');
+        cataImage.src = imgSource;
+        cataImage.className = 'inputIcon';
+        cataImage.id = 'taskIcon'
+        inputDiv.appendChild(cataImage);
+        checked = true;
+    }
 }

@@ -36,3 +36,17 @@
 #bodystyle {
     background-color: antiquewhite;
 }
+
+.userinputBox {
+    position: relative;
+    width: 290px;
+    height: 60px;
+}
+
+.inputIcon {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    top: -55;
+    left: -65;
+}

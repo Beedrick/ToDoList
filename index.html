@@ -9,31 +9,37 @@
 </head>
 
 <body id="bodystyle">
-    <h1>To Do List:</h1>
+
+    <h1 style="position: relative; left: 650px;">To Do List:</h1>
     
     <div id="catagories">
         <h2>Pick the Task Type:</h2>
-        <button onclick="addToList('/images/household.png')">
+        <button onclick="selectCata('/images/household.png')" id="task1">
             <img src="/images/household.png" class="cataButton" alt="chores" title="chores" id="chores">
         </button>
-        <button onclick="addToList('/images/graduation-hat.png')">
+        <button onclick="selectCata('/images/graduation-hat.png')" id="task2">
             <img src="/images/graduation-hat.png" class="cataButton" alt="study" title="studies">
         </button>
-        <button onclick="addToList('/images/meeting-room.png')">
+        <button onclick="selectCata('/images/meeting-room.png')" id="task3">
             <img src="/images/meeting-room.png" class="cataButton" alt="meetings" title="meetings">
         </button>
-        <button onclick="addToList('/images/clipboards.png')">
+        <button onclick="selectCata('/images/clipboards.png')" id="task4">
             <img src="/images/clipboards.png" class="cataButton" alt="other" title="other">
         </button>
     </div>
     
     <br>
     
-    <div id="container">
-        <var id = "numOfTask">0</var> / <var>10</var>
+    <div class="userinputBox" id="userInputDiv">
+        <input class="userinputBox">
+        <button onclick="addToList()">add task</button>
     </div>
 
+    <br>
 
+    <div id="container">
+        <var id = "numOfTask"></var> / <var>10</var>
+    </div>
 
 </body>
 
