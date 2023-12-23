@@ -1,14 +1,22 @@
 var checked = false;
 
-function addToList(catagory) {
+function addToList() {
+
     var newDiv = document.createElement('div');
     newDiv.className = 'taskBox';
 
-    var cataImage = document.createElement('img');
-    cataImage.src = catagory;
-    cataImage.className = 'taskImage';
+    var userInBox = document.getElementById('userInputDiv');
 
-    newDiv.appendChild(cataImage);
+    var imagesource = userInBox.lastChild.src;
+    var url = new URL(imagesource);
+    var imagePath = url.pathname;
+
+    var cataImage = document.createElement('img');
+    cataImage.src = imagePath;
+    cataImage.className = 'taskImage';
+    cataImage.id = 'inBoxIcon';
+
+
 
     var removebutton = document.createElement('button');
     removebutton.className = 'doneButton';
@@ -19,17 +27,24 @@ function addToList(catagory) {
         decNumTask();
     });
 
-    var textBox = document.createElement('input');
-    textBox.className = 'inputBox';
+    var textBox = document.createElement('div');
+    textBox.id = 'inputBox';
 
     if(document.getElementById("numOfTask").innerHTML == 10){
         console.log("Error: no more than 10 tasks allowed!")
         return;
     }
 
+    var userIn = document.getElementById('user_input');
+    let text = userIn.value;
+    textBox.innerText = text;
+
     newDiv.appendChild(removebutton);
     newDiv.appendChild(textBox);
+    newDiv.appendChild(cataImage);
+
     document.getElementById('container').appendChild(newDiv);
+    
     incNumTask();
 }
 
@@ -43,7 +58,8 @@ function decNumTask() {
 
 function selectCata(imgSource) {
 var inputDiv = document.getElementById("userInputDiv");
-   if(checked){
+  
+if(checked){
        var divBoxSrc = document.getElementById('taskIcon');
        var url = new URL(divBoxSrc.src);
        var imagePath = url.pathname;

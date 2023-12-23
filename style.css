@@ -8,8 +8,8 @@
 
 .doneButton {
     position: relative;
-    left: 360px;;
-    top: 12.5;
+    left: 400px;;
+    top: 45;
 }
 
 .cataButton {
@@ -25,22 +25,25 @@
     left: 10;
 }
 
-.inputBox {
+#inputBox {
     position: relative;
-    left: -30;
-    top: 10;
+    left: 80;
+    top: 0;
     width: 290px;
-    height: 60px;
+    height: 70px;
+    background-color: aliceblue;
 }
 
 #bodystyle {
     background-color: antiquewhite;
 }
 
-.userinputBox {
+#user_input {
     position: relative;
-    width: 290px;
+    width: 245px;
     height: 60px;
+    left: 55;
+    top: 10;
 }
 
 .inputIcon {
@@ -49,4 +52,20 @@
     height: 45px;
     top: -55;
     left: -65;
+}
+
+#userInputDiv {
+    position: relative;
+    width: 310px;
+    height: 80px;
+    background-color: aliceblue;
+}
+
+#taskIcon {
+    top: -45;
+}
+
+#inBoxIcon {
+    top: -60;
+    left: 15;
 }
