@@ -1,71 +1,69 @@
+#catagories {
+    display: flex;
+    background-color: aquamarine;
+}
+
+.cataButton {
+    width: 50;
+    height: 50;
+}
+
+.taskImage {
+    width: 50;
+    height: 50;
+}
+
+#userInputDiv {
+    display: flex;
+}
+
+#taskIcon {
+    position: relative;
+    left: -240;
+}
+
+#user_Input {
+    position: relative;
+    left: 60;
+}
+
+#addTaskButton {
+    position: relative;
+    left: 65;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#inputBox {
+    width: 300;
+    height: 100;
+    background-color: yellow;
+    margin: 10;
+    text-align: center;
+    
+}
+
 .taskBox {
-    width: 390px;
-    height: 120px;
-    background-color: grey;
-    margin-top: 10px;
-    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 10;
 }
 
 .doneButton {
     position: relative;
-    left: 400px;;
-    top: 45;
-}
-
-.cataButton {
-    width: 45px;
-    height: 45px;
-}
-
-.taskImage {
-    position: relative;
-    width: 45px;
-    height: 45px;
-    top: 30;
-    left: 10;
-}
-
-#inputBox {
-    position: relative;
-    left: 80;
-    top: 0;
-    width: 290px;
-    height: 70px;
-    background-color: aliceblue;
-}
-
-#bodystyle {
-    background-color: antiquewhite;
-}
-
-#user_input {
-    position: relative;
-    width: 245px;
-    height: 60px;
-    left: 55;
-    top: 10;
-}
-
-.inputIcon {
-    position: relative;
-    width: 45px;
-    height: 45px;
-    top: -55;
-    left: -65;
-}
-
-#userInputDiv {
-    position: relative;
-    width: 310px;
-    height: 80px;
-    background-color: aliceblue;
-}
-
-#taskIcon {
-    top: -45;
+    width: 75;
+    height: 25;
+    top: 35;
 }
 
 #inBoxIcon {
-    top: -60;
-    left: 15;
+    position: relative;
+    top: 30;
 }
+
+

@@ -39,12 +39,18 @@ function addToList() {
     let text = userIn.value;
     textBox.innerText = text;
 
-    newDiv.appendChild(removebutton);
-    newDiv.appendChild(textBox);
     newDiv.appendChild(cataImage);
+    newDiv.appendChild(textBox);
+    newDiv.appendChild(removebutton);
 
     document.getElementById('container').appendChild(newDiv);
     
+    var inputDiv = document.getElementById("userInputDiv");
+    inputDiv.removeChild(document.getElementById('taskIcon'));
+    userIn.value = ""
+
+    checked = false;
+
     incNumTask();
 }
 
@@ -72,10 +78,9 @@ if(checked){
    }
 
     if(!checked){
-
         var cataImage = document.createElement('img');
         cataImage.src = imgSource;
-        cataImage.className = 'inputIcon';
+        cataImage.className = 'taskImage';
         cataImage.id = 'taskIcon'
         inputDiv.appendChild(cataImage);
         checked = true;

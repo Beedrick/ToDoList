@@ -12,8 +12,9 @@
 
     <h1 style="position: relative; left: 650px;">To Do List:</h1>
     
+    <h2>Pick the Task Type:</h2>
+
     <div id="catagories">
-        <h2>Pick the Task Type:</h2>
         <button onclick="selectCata('/images/household.png')" id="task1">
             <img src="/images/household.png" class="cataButton" alt="chores" title="chores" id="chores">
         </button>
@@ -32,15 +33,17 @@
     
     <div  id="userInputDiv">
         <input type="text" id="user_input">
-        <button onclick="addToList()">add task</button>
+        <button onclick="addToList()" id="addTaskButton">add task</button>
     </div>
 
     <br>
 
+    <var id = "numOfTask"></var> / <var>10</var>
+
     <div id="container">
-        <var id = "numOfTask"></var> / <var>10</var>
+        
     </div>
-    
+
 </body>
 
 </html>
