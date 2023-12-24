@@ -25,6 +25,9 @@ function addToList() {
     removebutton.addEventListener('click', function() {
         newDiv.remove();
         decNumTask();
+
+        var completeTask = new Audio('/audio/TaskDone.MP3');
+        completeTask.play();
     });
 
     var textBox = document.createElement('div');
@@ -38,6 +41,9 @@ function addToList() {
     var userIn = document.getElementById('user_input');
     let text = userIn.value;
     textBox.innerText = text;
+
+    var writeTask = new Audio('/audio/WriteTask.MP3');
+    writeTask.play();
 
     newDiv.appendChild(cataImage);
     newDiv.appendChild(textBox);

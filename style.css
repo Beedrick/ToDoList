@@ -1,6 +1,12 @@
 #catagories {
     display: flex;
+    justify-content: center;
     background-color: aquamarine;
+    height: 100;
+}
+
+.taskIconCataDiv{
+    height: 60;
 }
 
 .cataButton {
@@ -15,6 +21,7 @@
 
 #userInputDiv {
     display: flex;
+    justify-content: center;
 }
 
 #taskIcon {
@@ -64,6 +71,10 @@
 #inBoxIcon {
     position: relative;
     top: 30;
+}
+
+#bodystyle {
+    background-color:teal;
 }
 
 

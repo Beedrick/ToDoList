@@ -10,30 +10,32 @@
 
 <body id="bodystyle">
 
-    <h1 style="position: relative; left: 650px;">To Do List:</h1>
+    <div id="container1">
+        <h1 style="display: flex; justify-content: center;">To Do List:</h1>
+        
+        <h2 style="display: flex; justify-content: center;">Pick the Task Type:</h2>
     
-    <h2>Pick the Task Type:</h2>
-
-    <div id="catagories">
-        <button onclick="selectCata('/images/household.png')" id="task1">
-            <img src="/images/household.png" class="cataButton" alt="chores" title="chores" id="chores">
-        </button>
-        <button onclick="selectCata('/images/graduation-hat.png')" id="task2">
-            <img src="/images/graduation-hat.png" class="cataButton" alt="study" title="studies">
-        </button>
-        <button onclick="selectCata('/images/meeting-room.png')" id="task3">
-            <img src="/images/meeting-room.png" class="cataButton" alt="meetings" title="meetings">
-        </button>
-        <button onclick="selectCata('/images/clipboards.png')" id="task4">
-            <img src="/images/clipboards.png" class="cataButton" alt="other" title="other">
-        </button>
-    </div>
-    
-    <br>
-    
-    <div  id="userInputDiv">
-        <input type="text" id="user_input">
-        <button onclick="addToList()" id="addTaskButton">add task</button>
+        <div id="catagories">
+            <button onclick="selectCata('/images/household.png')" class="taskIconCataDiv">
+                <img src="/images/household.png" class="cataButton" alt="chores" title="chores" id="chores">
+            </button>
+            <button onclick="selectCata('/images/graduation-hat.png')" class="taskIconCataDiv">
+                <img src="/images/graduation-hat.png" class="cataButton" alt="study" title="studies">
+            </button>
+            <button onclick="selectCata('/images/meeting-room.png')" class="taskIconCataDiv">
+                <img src="/images/meeting-room.png" class="cataButton" alt="meetings" title="meetings">
+            </button>
+            <button onclick="selectCata('/images/clipboards.png')" class="taskIconCataDiv">
+                <img src="/images/clipboards.png" class="cataButton" alt="other" title="other">
+            </button>
+        </div>
+        
+        <br>
+        
+        <div  id="userInputDiv">
+            <input type="text" id="user_input">
+            <button onclick="addToList()" id="addTaskButton">add task</button>
+        </div>
     </div>
 
     <br>
@@ -41,7 +43,7 @@
     <var id = "numOfTask"></var> / <var>10</var>
 
     <div id="container">
-        
+
     </div>
 
 </body>
