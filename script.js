@@ -69,6 +69,7 @@ function decNumTask() {
 }
 
 function selectCata(imgSource) {
+
 var inputDiv = document.getElementById("userInputDiv");
   
 if(checked){
