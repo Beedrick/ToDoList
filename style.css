@@ -1,8 +1,8 @@
 #catagories {
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
     height: 100;
+
 }
 
 .taskIconCataDiv{
@@ -47,8 +47,8 @@
 }
 
 #inputBox {
-    width: 300;
-    height: 100;
+    width: 250;
+    height: 50;
     background-color: yellow;
     margin: 10;
     text-align: center;
@@ -65,12 +65,12 @@
     position: relative;
     width: 75;
     height: 25;
-    top: 35;
+    top: 25;
 }
 
 #inBoxIcon {
     position: relative;
-    top: 30;
+    top: 12;
 }
 
 #bodystyle {
@@ -93,3 +93,16 @@
 	}
 }
 
+#numOfTask {
+    display: flex;
+    justify-content: center;
+    font-style: oblique;
+    font: 200;
+    font-size: xx-large;
+}
+
+.outof {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
