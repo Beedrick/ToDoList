@@ -119,6 +119,9 @@ if(checked){
         cataImage.className = 'taskImage';
         cataImage.id = 'taskIcon'
         inputDiv.appendChild(cataImage);
+
+        document.getElementById('user_input').focus();
+
         checked = true;
     }
 }
