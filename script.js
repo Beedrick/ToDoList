@@ -31,7 +31,7 @@ function addToList() {
     editButton.className = 'doneButton';
     editButton.textContent = 'edit';
 
-    removebutton.addEventListener('click', function() {
+    removebutton.addEventListener('click', function () {
         newDiv.remove();
         decNumTask();
 
@@ -40,16 +40,16 @@ function addToList() {
         completeTask.play();
     });
 
-    editButton.addEventListener('click', function(){
-        
-        if(editButton.innerText.toLowerCase() == 'edit'){
+    editButton.addEventListener('click', function () {
+
+        if (editButton.innerText.toLowerCase() == 'edit') {
             var editSound = new Audio('/audio/editSoundF.MP3');
             editSound.play();
             editSound.volume = 0.15;
             taskInput.removeAttribute('readonly');
             taskInput.focus();
             editButton.innerText = 'save';
-        }else {
+        } else {
             taskInput.readOnly = 'true';
             editButton.innerText = 'edit';
             var saveSound = new Audio('/audio/SaveSound.MP3');
@@ -60,7 +60,7 @@ function addToList() {
     })
 
 
-    if(document.getElementById("numOfTask").innerHTML == 10){
+    if (document.getElementById("numOfTask").innerHTML == 10) {
         console.log("Error: no more than 10 tasks allowed!")
         return;
     }
@@ -79,7 +79,7 @@ function addToList() {
     newDiv.appendChild(editButton);
 
     document.getElementById('container').appendChild(newDiv);
-    
+
     var inputDiv = document.getElementById("userInputDiv");
     inputDiv.removeChild(document.getElementById('taskIcon'));
     userIn.value = ""
@@ -99,21 +99,21 @@ function decNumTask() {
 
 function selectCata(imgSource) {
 
-var inputDiv = document.getElementById("userInputDiv");
-  
-if(checked){
-       var divBoxSrc = document.getElementById('taskIcon');
-       var url = new URL(divBoxSrc.src);
-       var imagePath = url.pathname;
-       if(imagePath == imgSource){
-        return;
-       }else{
-        checked = false;
-        inputDiv.removeChild(document.getElementById('taskIcon'));
-       }
-   }
+    var inputDiv = document.getElementById("userInputDiv");
 
-    if(!checked){
+    if (checked) {
+        var divBoxSrc = document.getElementById('taskIcon');
+        var url = new URL(divBoxSrc.src);
+        var imagePath = url.pathname;
+        if (imagePath == imgSource) {
+            return;
+        } else {
+            checked = false;
+            inputDiv.removeChild(document.getElementById('taskIcon'));
+        }
+    }
+
+    if (!checked) {
         var cataImage = document.createElement('img');
         cataImage.src = imgSource;
         cataImage.className = 'taskImage';
