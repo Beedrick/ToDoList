@@ -49,7 +49,7 @@
 #inputBox {
     width: 250;
     height: 50;
-    background-color: yellow;
+    background-color: rgb(87, 195, 238);
     margin: 10;
     text-align: center;
     
@@ -72,25 +72,18 @@
     position: relative;
     top: 12;
 }
-
+/*
 #bodystyle {
-
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #48cee6, #10b4d1, #358dad, #290f85);
 	background-size: 400% 400%;
 	animation: gradient 25s ease infinite;
 	height: 100vh; 
 }
+*/
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+#bodystyle {
+ background-image: url("/images/DeskBackGroundSoftLight.jpg");
+ background-size:cover;
 }
 
 #numOfTask {
@@ -106,3 +99,17 @@
     justify-content: center;
     font-size: xx-large;
 }
+
+/*
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*/

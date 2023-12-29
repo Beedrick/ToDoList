@@ -2,6 +2,13 @@ var checked = false;
 
 function addToList() {
 
+
+    var userIn = document.getElementById('user_input');
+
+    if(userIn.value == ""){
+        return;
+    }
+
     var newDiv = document.createElement('div');
     newDiv.className = 'taskBox';
 
