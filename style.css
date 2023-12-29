@@ -1,12 +1,12 @@
 #catagories {
     display: flex;
-    justify-content: center;
     height: 100;
-
 }
 
 .taskIconCataDiv{
+    border-radius: 0.5rem;
     height: 60;
+    background-color: rgb(172, 115, 42);
 }
 
 .cataButton {
@@ -15,13 +15,14 @@
 }
 
 .taskImage {
+    border-radius: 0.5rem;
     width: 50;
     height: 50;
 }
 
 #userInputDiv {
+    border-radius: 0.5rem;
     display: flex;
-    justify-content: center;
 }
 
 #taskIcon {
@@ -31,25 +32,26 @@
 
 #user_Input {
     position: relative;
+    border-radius: 1rem;
     left: 60;
 }
 
 #addTaskButton {
     position: relative;
+    border-radius: 1rem;
     left: 65;
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 }
 
 #inputBox {
+    border-radius: 0.5rem;
     width: 250;
     height: 50;
-    background-color: rgb(87, 195, 238);
+    background-color: rgb(116, 83, 21);
     margin: 10;
     text-align: center;
     
@@ -58,10 +60,12 @@
 .taskBox {
     display: flex;
     justify-content: space-around;
+    justify-content: center;
     margin: 10;
 }
 
 .doneButton {
+    border-radius: 0.5rem;
     position: relative;
     width: 75;
     height: 25;
